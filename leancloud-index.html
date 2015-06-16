@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>第一个leanCloud程序</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<script src="https://cdn1.lncld.net/static/js/av-mini-0.5.4.js"></script>
+<script type="text/javascript">
+    //App ID : ywgy2pkn8yntz4247rx17lgbyryoj953eckvfr28d60m2u2c
+    //App Key : 0qm5kjelokio5l8lsfkjscx0x0ilapr9iaa954fl8kbex7o5
+    //Master Key : 22yt19mshy3g7ch8mesl3wlg8vasjxu8pdnlcez0muvq0srq
+
+    //进行代码初始化，加入这行代码后，就可以创建 class 或任何其他操作了。
+    AV.initialize("ywgy2pkn8yntz4247rx17lgbyryoj953eckvfr28d60m2u2c", "0qm5kjelokio5l8lsfkjscx0x0ilapr9iaa954fl8kbex7o5");
+
+    //测试代码
+    var TestObject = AV.Object.extend("TestObject");
+    var testObject = new TestObject();
+    testObject.save({foo: "bar",phone:'13811866468'}, {
+      success: function(object) {
+      alert("LeanCloud works!");
+      }
+    });
+</script>
+</head>
+<body>
+    无语....
+</body>
+</html>
